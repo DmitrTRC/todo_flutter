@@ -2,4 +2,4 @@
 
 ### - Add 'Reset button'
 
-### - Reset counter when reset button pressed
+### — Reset counter when reset button pressed
