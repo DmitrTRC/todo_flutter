@@ -35,11 +35,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
       _counter++;
     });
   }
@@ -52,9 +47,32 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var buttons = Stack(
+      children: <Widget>[
+        Align(
+          alignment: Alignment.bottomRight,
+          child: FloatingActionButton(
+            onPressed: _incrementCounter,
+            tooltip: 'Increment',
+            child: const Icon(Icons.add),
+          ),
+        ),
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: FloatingActionButton(
+            onPressed: _resetCounter,
+            tooltip: 'Reset',
+            child: const Icon(Icons.restart_alt),
+          ),
+        )
+      ],
+    ); // This trailing comma makes auto-formatting nicer for build methods.
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Theme
+            .of(context)
+            .colorScheme
+            .inversePrimary,
         title: Text(widget.title),
       ),
       body: Center(
@@ -66,31 +84,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              style: Theme
+                  .of(context)
+                  .textTheme
+                  .headlineMedium,
             ),
           ],
         ),
       ),
-      floatingActionButton: Stack(
-        children: <Widget>[
-          Align(
-            alignment: Alignment.bottomRight,
-            child: FloatingActionButton(
-              onPressed: _incrementCounter,
-              tooltip: 'Increment',
-              child: const Icon(Icons.add),
-            ),
-          ),
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: FloatingActionButton(
-              onPressed: _resetCounter,
-              tooltip: 'Reset',
-              child: const Icon(Icons.restart_alt),
-            ),
-          )
-        ],
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButton: buttons,
     );
   }
 }
