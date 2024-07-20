@@ -4,7 +4,6 @@
 
 ### — Reset counter when reset button pressed : Done
 
-#### - Refactor  Move buttons into separate object and reset aligment to bottom left
 
 [//]: # (if case)
 
@@ -21,7 +20,7 @@
     - Weight
     - License Status
     - Optics
-    - Ranged_at
+    - Zeroed_at
     - Amo_type
     - Shot_counter
     - Model
@@ -30,7 +29,22 @@
 
 ## Optic
 
+## Amo
+
 UI:  
 - List of Weapon objects
 - 3 Buttons ( 'Add', 'Delete', 'View')
         
+---- 18.07.2024
+1) 3d-Party API ( Django , .NET, NODE JS )
+2) BaaS ( Complete services solution)
+3) FireBase Goggle Native.
+4) 3d Party Frameworks (Opensource) - Vania, Frog, Serverpod
+
+TLDR: FireBase
+
+Configure FireBase project
+
+   
+
+
