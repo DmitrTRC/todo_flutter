@@ -43,7 +43,7 @@ UI:
 
 TLDR: FireBase
 
-Configure FireBase project
+###  - Configure FireBase project
 
    
 
