@@ -50,5 +50,8 @@ TLDR: FireBase
 ###  - Configure FireBase project
 
    
+# Home Task
+
+Replace the original Counter with a list of Weapons.
 
 
