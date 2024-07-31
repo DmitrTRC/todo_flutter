@@ -33,4 +33,8 @@
 UI:  
 - List of Weapon objects
 - 3 Buttons ( 'Add', 'Delete', 'View')
+
+# Home Task
+
+Create the list of WeaponObjects and replace the original counter with a created list
         
