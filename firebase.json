@@ -1,0 +1,31 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "site": "inventory-db-39f43-769cf",
+    "public": "public"
+  },
+  "flutter": {
+    "platforms": {
+      "ios": {
+        "default": {
+          "projectId": "inventory-db-39f43",
+          "appId": "1:516784558226:ios:d5254fd2c2b371ab6fd64b",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "inventory-db-39f43",
+          "configurations": {
+            "ios": "1:516784558226:ios:d5254fd2c2b371ab6fd64b",
+            "web": "1:516784558226:web:abab00d59743b6726fd64b"
+          }
+        }
+      }
+    }
+  }
+}
